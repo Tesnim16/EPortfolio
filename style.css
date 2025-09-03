@@ -1,0 +1,551 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(70deg, #9763ad, #c773c7);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: gradientBG 8s ease infinite;
+    transition: background 0.3s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ac6ca2;
+    margin-bottom: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+nav ul li {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #9763ad;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(202, 111, 255, 0.5);
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe0ff;
+    padding: 0 20px;
+    margin-top: 80px;
+    opacity: 1;
+    animation: fadeInUp 1s ease forwards 0s;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    color: #ac6ca2;
+    animation: glowText 2s ease-in-out infinite alternate;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    color: #333;
+    line-height: 1.6;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000000;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+a {
+    text-decoration: none;
+    color:#333;
+}
+
+.presentation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe0ff;
+    padding: 0 20px;
+    margin-top: 80px;
+    opacity: 1;
+    animation: fadeInUp 1s ease forwards 0s;
+}
+
+.presentation h1 {
+    font-size: 3rem;
+    color: #ac6ca2;
+    margin-bottom: 20px;
+}
+
+.presentation p {
+    font-size: 1.2rem;
+    max-width: 1200px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 160px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-front {
+    background-color: #ffe9f6;
+}
+
+.card-back {
+    background-color: #dfbee9;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back
+ {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe0ff;
+    padding: 0 20px;
+    margin-top: 80px;
+    opacity: 1;
+    animation: fadeInUp 1s ease forwards 0s;
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: #ac6ca2;
+    margin-bottom: 20px;
+} 
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 1200px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.parcours {
+    width: 100%;
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe0ff;
+    padding: 0 20px;
+    margin-top: 80px;
+    opacity: 1;
+    animation: fadeInUp 1s ease forwards 0s;
+}
+
+.cv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe0ff;
+    padding: 0 20px;
+    margin-top: 80px;
+    opacity: 1;
+    animation: fadeInUp 1s ease forwards 0s;
+}
+
+.cv-image {
+    width: 100%;
+    max-width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cv-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cv-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ac6ca2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgba(212, 167, 250, 0.3);
+    border-radius: 50%;
+    animation: moveParticle 15s linear infinite;
+}
+
+.project-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Styles de carte à retournement */
+        .project-item {
+            perspective: 1000px;
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .project-card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .project-item:hover .project-card {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-front {
+            background-color: #dfbee9;
+            color: #333;
+        }
+
+        .card-back {
+            background-color: #ac6ca2;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .tech-skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tech-badge {
+            background-color: white;
+            color: #ff6f91;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+.tableau-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ac6ca2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tableau-image {
+    width: 100%;
+    max-width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tableau-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.competences {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  gap: 2rem;              
+  flex-wrap: wrap;        
+}
+
+.icon-container {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-container img {
+  width: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-container:hover img {
+  transform: translateY(-10px);
+}
+
+.icon-container h3 {
+  transition: color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.competences-image {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffe0ff;
+    padding: 0 20px;
+    margin-top: 80px;
+    opacity: 1;
+    animation: fadeInUp 1s ease forwards 0s;
+}
+
+.article-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Styles de carte à retournement */
+        .article-item {
+            perspective: 1000px;
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            position: relative;
+        }
+
+        .article-card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .article-item:hover .article-card {
+            transform: rotateY(180deg);
+        }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-front {
+            background-color: #dfbee9;
+            color: #333;
+        }
+
+        .card-back {
+            background-color: #ac6ca2;
+            color: black;
+            transform: rotateY(180deg);
+        }
+
+        .tech-skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+
+
+
+footer {
+    background-color: #ffe0ff;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glowText {
+    from {
+        text-shadow: 0 0 5px #c689bd, 0 0 10px #c689bd, 0 0 15px #c689bd, 0 0 20px #c689bd;
+    }
+    to {
+        text-shadow: 0 0 10px #c689bd, 0 0 20px #c689bd, 0 0 30px #c689bd, 0 0 40px #c689bd;
+    }
+}
+
+
+
+@keyframes moveParticle {
+    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
