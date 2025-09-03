@@ -26,8 +26,8 @@ $year = date("Y");
         <li><a href="projet.php">Mes projets</a></li>
         <li><a href="E5.php">E5</a></li>
         <li><a href="competences.php">Mes compétences</a></li>
-        <li><a href="">Ma veille</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="veille.php">Ma veille</a></li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
     </nav>
   </header>
