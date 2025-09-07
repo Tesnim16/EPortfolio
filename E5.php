@@ -58,8 +58,8 @@ $year = date("Y");
             à consulter mon tableau de synthèse.
         </p>
         <img src="img/Tableau de synthèse BENAMA Tesnim.png" alt="Tableau_de_synthèse" class="tableau-image">
-        <p>Vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :</p>
-        <a href="pdf/Tesnim BENAMA Tableau_de_synthese_2024.pdf" class="tableau-link" target="_blank">Télécharger mon CV</a>
+        <p>Vous pouvez télécharger mon Tableau de synthèse en cliquant sur le lien ci-dessous :</p>
+        <a href="pdf/Tesnim BENAMA Tableau_de_synthese_2024.pdf" class="tableau-link" target="_blank">Télécharger mon Tableau de synthèse</a>
     </section>
     <footer>
         <p>&copy; <?php echo $year; ?> BENAMA Tesnim. Tous droits réservés.</p>
