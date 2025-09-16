@@ -57,16 +57,16 @@ $year = date("Y");
             <div class="article-item">
                 <div class="article-card">
                     <div class="card-front">
-                        <h3>Feedly</h3>
+                        <h3>X (anciennement Twitter)</h3>
                         <div class="tech-skill">
-                            <p>Outil de veille RSS</p>
+                            <p>Outil de veille</p>
                         </div>
                     </div>
                     <div class="card-back">
-                        <h3>Feedly</h3>
-                        <p>Feedly est un agrégateur de flux RSS qui permet de centraliser et organiser les sources
-                            d'information. Il facilite la veille en offrant une interface conviviale pour suivre les
-                            actualités, blogs et publications dans un seul endroit.</p>
+                        <h3>X (anciennement Twitter)</h3>
+                        <p>X (anciennement Twitter) est un réseau social, où les gens communiquent de nombreuses
+                            informations comme des trends, des actualités journalières et même de nouvelles technologies
+                            comme les nouvelles technologies qu'Elon Musk publie.</p>
                         <a href="https://feedly.com/" target="_blank">Voir le site</a>
                     </div>
                 </div>
@@ -74,16 +74,16 @@ $year = date("Y");
             <div class="article-item">
                 <div class="article-card">
                     <div class="card-front">
-                        <h3>Inoreader</h3>
+                        <h3>LinkedIn</h3>
                         <div class="tech-skill">
-                            <p>Outil de veille RSS</p>
+                            <p>Outil de Veille/Recherche</p>
                         </div>
                     </div>
                     <div class="card-back">
-                        <h3>Inoreader</h3>
-                        <p>Inoreader est un autre agrégateur de flux RSS qui offre des fonctionnalités avancées pour la
-                            veille technologique. Il permet de filtrer, organiser et automatiser la gestion des
-                            informations, facilitant ainsi le suivi des sujets d'intérêt.</p>
+                        <h3>LinkedIn</h3>
+                        <p>LinkedIn est une réseau social pour professionnel, il permet aux autres de s'informer sur les
+                            nouvelles alertes d'emploi, nouvelles technologies et les nouvelles actualités au sein
+                            d'entreprise et autres.</p>
                         <a href="https://www.inoreader.com/" target="_blank">Voir le site</a>
                     </div>
                 </div>
@@ -99,8 +99,10 @@ $year = date("Y");
                     <div class="card-back">
                         <h3>Google Alerts</h3>
                         <p>Google Alerts est un service gratuit de Google qui permet de recevoir des notifications par
-                            email lorsqu'un nouveau contenu correspondant à des mots-clés spécifiques est publié en ligne.
-                            C'est un outil simple mais efficace pour rester informé des dernières actualités et tendances
+                            email lorsqu'un nouveau contenu correspondant à des mots-clés spécifiques est publié en
+                            ligne.
+                            C'est un outil simple mais efficace pour rester informé des dernières actualités et
+                            tendances
                             dans un domaine particulier.</p>
                         <a href="https://www.google.com/alerts" target="_blank">Voir le site</a>
                     </div>
